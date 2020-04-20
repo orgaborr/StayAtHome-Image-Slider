@@ -17,10 +17,32 @@ button {
     width: 40px;
 }
 
-#view-img {
-    width: 720px;
-}
-
 #next img {
     transform: rotate(0.5turn);
 }
+
+#middle {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#view-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.photo-info {
+    position: relative;
+    background-color: grey;
+    opacity: 0.8;
+    height: 100px;
+    left: 0;
+    top: 280px;
+
+    color: white;
+}
+
+
