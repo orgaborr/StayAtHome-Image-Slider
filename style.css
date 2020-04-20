@@ -20,3 +20,7 @@ button {
 #view-img {
     width: 720px;
 }
+
+#next img {
+    transform: rotate(0.5turn);
+}
