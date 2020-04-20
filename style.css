@@ -6,8 +6,11 @@ body {
 
 .viewer {
     display: flex;
+    position: absolute;
+    top: 50%;
     width: 800px;
     height: 400px;
+    margin-top: -200px;
 }
 
 button {
