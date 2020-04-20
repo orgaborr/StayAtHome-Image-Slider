@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer {
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+button {
+    width: 40px;
+}
+
+#view-img {
+    width: 720px;
+}
