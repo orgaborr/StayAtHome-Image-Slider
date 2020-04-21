@@ -1,9 +1,17 @@
-let data = {
-    photo: 'Photos/viraglada.jpg',
-    title: 'Virágláda',
-    description: 'Fűszernövények egy ládában, melyeket magam ültettem.'
-};
+function createPhotoData(photo, title, description) {
+    let dataObj = {
+        photo: photo,
+        title: title,
+        description: description
+    };
+    return dataObj;
+}
 
-$('#view-img').attr('src', data.photo);
-$('#photo-title').text(data.title);
-$('#photo-description').text(data.description);
+let viraglada = createPhotoData('Photos/viraglada.jpg', 'Virágláda', 'Fűszernövények egy ládában, melyeket magam ültettem.');
+let kokapu = createPhotoData('Photos/kokapu.jpg', 'Kőkapu', 'A Badacsony híres útja. Magam készítettem, szúnyogokkal terrorizálva.');
+
+
+$('#view-img').attr('src', viraglada.photo);
+$('#photo-title').text(viraglada.title);
+$('#photo-description').text(viraglada.description);
+
