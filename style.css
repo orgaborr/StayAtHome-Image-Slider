@@ -29,15 +29,28 @@ button {
     position: relative;
 }
 
-#view-img {
+#photo-container {
     position: absolute;
     top: 0;
     left: 0;
+    width:720px; 
+    height: 400px;
+    background-color: black;
+}
+
+#view-img {
+    display: block;
+    max-width: 720px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .photo-info {
     position: relative;
-    background: rgba(120, 120, 120, 0.8);
+    background: rgba(120, 120, 120, 0.5);
     height: 100px;
     left: 0;
     top: 300px;
@@ -50,6 +63,10 @@ h1, p {
     margin: 0;
     padding: 0;
     margin-bottom: 4px;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 
