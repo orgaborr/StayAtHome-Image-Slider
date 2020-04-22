@@ -23,3 +23,13 @@ function loadPhoto(photoNumber) {
 };
 
 loadPhoto(photoDisplayed);
+
+$('#next').click(() => {
+    photoDisplayed++;
+    loadPhoto(photoDisplayed);
+})
+
+$('#previous').click(() => {
+    photoDisplayed--;
+    loadPhoto(photoDisplayed);
+})
