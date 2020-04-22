@@ -26,10 +26,16 @@ loadPhoto(photoDisplayed);
 
 $('#next').click(() => {
     photoDisplayed++;
+    if(photoDisplayed >= images.length) {
+        photoDisplayed = 0;
+    }
     loadPhoto(photoDisplayed);
 })
 
 $('#previous').click(() => {
     photoDisplayed--;
+    if(photoDisplayed < 0) {
+        photoDisplayed = images.length-1;
+    }
     loadPhoto(photoDisplayed);
 })
