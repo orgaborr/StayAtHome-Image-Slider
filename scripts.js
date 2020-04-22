@@ -39,3 +39,7 @@ $('#previous').click(() => {
     }
     loadPhoto(photoDisplayed);
 })
+
+images.forEach((image) => {
+    $('.thumbnails-container').append('<img class="thumbnail" src="' + image.photo + '" data-number="' + images[image] + '">');
+});
