@@ -1,8 +1,19 @@
+html, body {
+    height: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw8NDw8PDw8PDw0PDw8PDw8PDw0PFREWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAAZEAEBAQEBAQAAAAAAAAAAAAAAARESAgP/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+leY3hIoCiyAiyLi4CYuLI1gM4uNSLgMYvLeLgMYY3i4DHJjeLgOfJy6YYDnhjpiYDnycumGA5YljriYDlYmOuM2A54mOmJgOeJjpYzYDGI3UBjGfUdEsB5+B1xQdSLFAkWQkakBJGpFkakBJFkakXAZkXFkWQExcXFwGcXFXAZwxoBnDGgGcMaAZxMaMBnExrAGMTG7EwGLEx0sTAccSx1sZsBysZsdLGbAYRpAZouAOmLIY1IBI3IkjcgEjUhIoGLgoIooIooIKAAAAAAAIoCCoCI0gImNIDFiWNpYDlYxY7WMWA5VmuljNgMC0B0kakSRuAsbkSRqARpFAUABQAABUAVBQQAAAAAAAEFARFAZRpAZsY9R0rFgOdjFjpWLAYwawBvy3IzG4DUaiRQVUUBUUAAAAAAAAAAAAAAAAAEAABAAZrNbrNBisVusUGRQGo6RiNwGosSKCqAKAAAAAAAAAAAAAAAAAAgAAAIqAlZrTNBmufqOlYoMgA15bjEbgNxWY1AVUUBUUAAAAAAAAAAAAAABFQAAAAEABKzWqzQZrFatYoIJoCytyucrcoOkrTErUBpUUFEUFEAURQAAAAAAAQAAAAAEBUEBUEoJWatZtBK5+q1axaCWiaA1K1K5xqUHWVqVylblB01qOcrUoNKzqgqsroKIAoAAAKgAAACAKgACAAiaCpalqWgWudq2sWgWsWlrNoAmgNSrKwoOkrUrnKsoO0rUrjK1KDrq65ytSg3ozpoNjOroNDOmg0amgKIaCiagNIhoKM6aC6mpqWg1rOpaloLazazazaC2sWpazaBalqaAujKgsq65+a0DUrWsaA6StSuWrKDrPTU9OUqz0DtKuuPTXQOumufR0Drprn0ug6aa59LoN6axpoN6ms6mg3prGp0DeprHSX0DdqaxfTN9A3fTN9M30zfQNX0zazaloLazqaloNImpaC6OfQB8/brKALoALq6ALpKALKugC9LPQAvR0oBp0oCdHSgJ0dACdHQAnSX0AM9JoAlrOgCamgCaaAJrn79KA89+gAP/2Q==');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    overflow: hidden;
 }
 
 .viewer {
@@ -74,4 +85,17 @@ p {
     font-size: 16px;
 }
 
+.thumbnails-container {
+    display: flex;
+    position: absolute;
+    bottom: 19%;
+}
 
+.thumbnail {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 4px solid white;
+}
