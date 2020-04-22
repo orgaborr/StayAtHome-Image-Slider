@@ -17,9 +17,9 @@ let images = [viraglada, kokapu, gyomber, jegkristaly, zsalya];
 
 let photoDisplayed = 0;
 function loadPhoto(photoNumber) {
-    $('#view-img').attr('src', images[photoDisplayed].photo);
-    $('#photo-title').text(images[photoDisplayed].title);
-    $('#photo-description').text(images[photoDisplayed].description);
+    $('#view-img').attr('src', images[photoNumber].photo);
+    $('#photo-title').text(images[photoNumber].title);
+    $('#photo-description').text(images[photoNumber].description);
 };
 
 loadPhoto(photoDisplayed);
