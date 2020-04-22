@@ -15,8 +15,11 @@ let zsalya = createPhotoData('Photos/zsalya.jpg', 'Zsálya a naplementében', 'A
 
 let images = [viraglada, kokapu, gyomber, jegkristaly, zsalya];
 
-let photoDisplayed = 4;
-$('#view-img').attr('src', images[photoDisplayed].photo);
-$('#photo-title').text(images[photoDisplayed].title);
-$('#photo-description').text(images[photoDisplayed].description);
+let photoDisplayed = 0;
+function loadPhoto(photoNumber) {
+    $('#view-img').attr('src', images[photoDisplayed].photo);
+    $('#photo-title').text(images[photoDisplayed].title);
+    $('#photo-description').text(images[photoDisplayed].description);
+};
 
+loadPhoto(photoDisplayed);
