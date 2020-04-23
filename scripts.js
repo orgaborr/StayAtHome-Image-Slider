@@ -20,9 +20,9 @@ function loadPhoto(photoNumber) {
     $('#view-img').attr('src', images[photoNumber].photo);
     $('#photo-title').text(images[photoNumber].title);
     $('#photo-description').text(images[photoNumber].description);
-};
 
-loadPhoto(photoDisplayed);
+    $(`.thumbnail[data-index="${photoNumber}"]`).css('border-color', 'red');
+};
 
 $('#next').click(() => {
     photoDisplayed++;
@@ -49,3 +49,5 @@ $('.thumbnail').click((event) => {
     photoDisplayed = parseInt(indexClicked);
     loadPhoto(photoDisplayed);
 });
+
+loadPhoto(photoDisplayed);
