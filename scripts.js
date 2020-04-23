@@ -40,6 +40,12 @@ $('#previous').click(() => {
     loadPhoto(photoDisplayed);
 })
 
-images.forEach((image) => {
-    $('.thumbnails-container').append('<img class="thumbnail" src="' + image.photo + '" data-number="' + images[image] + '">');
+images.forEach((item, index) => {
+    $('.thumbnail-container').append(`<img class="thumbnail" src="${item.photo}" data-index="${index}">`);
+});
+
+$('.thumbnail').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    photoDisplayed = parseInt(indexClicked);
+    loadPhoto(photoDisplayed);
 });
