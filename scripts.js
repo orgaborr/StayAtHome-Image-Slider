@@ -20,8 +20,16 @@ function loadPhoto(photoNumber) {
     $('#view-img').attr('src', images[photoNumber].photo);
     $('#photo-title').text(images[photoNumber].title);
     $('#photo-description').text(images[photoNumber].description);
+    highlight(photoNumber);
+};
 
-    $(`.thumbnail[data-index="${photoNumber}"]`).css('border-color', 'red');
+let highlight = (photoNumber) => {
+    $(`.thumbnail[data-index="${photoNumber}"]`).attr('id', 'highlighted');
+    for(let i=0; i<images.length; i++) {
+        if(i != photoNumber) {
+            $(`.thumbnail[data-index="${i}"]`).removeAttr('id');
+        }      
+    }  
 };
 
 $('#next').click(() => {
